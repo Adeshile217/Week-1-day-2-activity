@@ -1,23 +1,23 @@
-let firstname = '';
-let lastname = '';
-let email = '';
-let username = '';
-let password = '';
+// let firstname = '';
+// let lastname = '';
+// let email = '';
+// let username = '';
+// let password = '';
 
 
 
 let firstnameInput = document.getElementById('firstname');
-let lastnameInput =  document.getElementById('lastname');
-let emailInput = document.getElementById('email');
+// let lastnameInput =  document.getElementById('lastname');
+// let emailInput = document.getElementById('email');
 let usernameInput = document.getElementById('username');
-let passwordInput = document.getElementById('password');
+// let passwordInput = document.getElementById('password');
 let submitButton = document.getElementById('submit');
 
 firstnameInput.addEventListener('input', handleFirstnameInputChange);
-lastnameInput.addEventListener('input', handleLastnameInputChange);
-emailInput.addEventListener('input', handleEmailInputChange);
+// lastnameInput.addEventListener('input', handleLastnameInputChange);
+// emailInput.addEventListener('input', handleEmailInputChange);
 usernameInput.addEventListener('input', handleUsernameInputChange);
-passwordInput.addEventListener('input', handlePasswordInputChange);
+// passwordInput.addEventListener('input', handlePasswordInputChange);
 submitButton.addEventListener('click', handleFormSubmit);
 
 function handleFirstnameInputChange(event){
@@ -39,5 +39,4 @@ function handleFormSubmit(event){
     event.preventDefault();
 
     alert("Thank you" + " " + firstname + ",Your Username is" + " " + username );
-    // console.log(event)
 } 
